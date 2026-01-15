@@ -5,14 +5,14 @@ const planets = [
     type: "Каменистая",
     short: "Ближайшая к Солнцу планета.",
     details: "Меркурий почти не имеет атмосферы, поэтому температура сильно меняется: жарко днём и холодно ночью.",
-    img: "https://images.unsplash.com/photo-1614727187331-285522b20eaf?auto=format&fit=crop&w=1200&q=80"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEpU2pMausFnfHLLWt_wskQW2M3T5woVTEaQ&s"
   },
   {
     name: "Венера",
     type: "Каменистая",
     short: "Самая горячая планета.",
     details: "Парниковый эффект делает Венеру очень горячей: температура около 465°C.",
-    img: "https://images.unsplash.com/photo-1614727187360-7f34f60f5b0a?auto=format&fit=crop&w=1200&q=80"
+    img: "https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/114B6/production/_118783807_d46ff476-316c-4dc6-ac82-42ef03ae0bf2.jpg.webp"
   },
   {
     name: "Земля",
@@ -26,21 +26,21 @@ const planets = [
     type: "Каменистая",
     short: "Красная планета.",
     details: "Марс холодный, с тонкой атмосферой. Учёные ищут следы воды и планируют будущие миссии.",
-    img: "https://images.unsplash.com/photo-1614727187852-97f6fa0a58d3?auto=format&fit=crop&w=1200&q=80"
+    img: "https://s14.stc.yc.kpcdn.net/share/i/12/10568798/wr-960.webp"
   },
   {
     name: "Юпитер",
     type: "Газовый гигант",
     short: "Самая большая планета.",
     details: "Юпитер известен Большим красным пятном — огромным штормом, который длится очень долго.",
-    img: "https://images.unsplash.com/photo-1614727187362-9a0ffb54e4d1?auto=format&fit=crop&w=1200&q=80"
+    img: "https://spacegid.com/wp-content/uploads/2018/04/YUpiter-----gigantskaya-planeta-solnechnoy-sistemyi.jpg"
   },
   {
     name: "Сатурн",
     type: "Газовый гигант",
     short: "Планета с красивыми кольцами.",
     details: "Кольца Сатурна состоят из льда и пыли. У него много спутников, включая Титан.",
-    img: "https://images.unsplash.com/photo-1614727187373-1b9b1c6e9d54?auto=format&fit=crop&w=1200&q=80"
+    img: "https://starwalk.space/gallery/images/saturn-planet-guide/1920x1080.jpg"
   }
 ];
 
