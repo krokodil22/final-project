@@ -224,6 +224,19 @@ body::after{
   box-shadow: var(--shadow);
   overflow:hidden;
 }
+
+.infoCard{
+  padding: 16px; /* или 18-22px как нравится */
+}
+
+.infoCard h4{
+  margin-top: 0;
+}
+
+.infoCard p{
+  margin-bottom: 0;
+}
+
 .card__img{
   height: 140px;
   overflow:hidden;
