@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Космос — инфо-сайт</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <div class="brand">
+        <span class="brand__icon">🪐</span>
+        <h1 class="logo">Космос</h1>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">О космосе</a>
+        <a href="#planets">Планеты</a>
+        <a href="#facts">Факты</a>
+      </nav>
+
+      <button id="themeBtn" class="btn btn--ghost" type="button">
+        🌙 Тема
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h2>Мини-энциклопедия о космосе</h2>
+          <p class="muted">
+            Простой сайт с красивым оформлением и интерактивом: карточки планет, поиск, модальное окно и аккордеон.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn" href="#planets">Смотреть планеты</a>
+            <button id="randomFactBtn" class="btn btn--ghost" type="button">🎲 Случайный факт</button>
+          </div>
+
+          <p id="randomFactText" class="factBox">
+            Нажми “Случайный факт”, чтобы увидеть интересность 🙂
+          </p>
+        </div>
+
+        <div class="hero__card">
+          <div class="hero__imgWrap">
+            <img
+              src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?auto=format&fit=crop&w=1200&q=80"
+              alt="Космос"
+              loading="lazy"
+            />
+          </div>
+          <div class="hero__mini">
+            <div class="miniStat">
+              <span class="miniStat__n" id="likeCount">0</span>
+              <span class="miniStat__t">лайков</span>
+            </div>
+            <div class="miniStat">
+              <span class="miniStat__n" id="cardCount">0</span>
+              <span class="miniStat__t">планет</span>
+            </div>
+            <div class="miniStat">
+              <span class="miniStat__n" id="searchHint">—</span>
+              <span class="miniStat__t">поиск</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <h3>О космосе</h3>
+        <div class="aboutGrid">
+          <div class="card infoCard">
+            <h4>Что такое космос?</h4>
+            <p class="muted">
+              Космос — это пространство за пределами атмосферы Земли. Там находятся звёзды, планеты, галактики и туманности.
+            </p>
+          </div>
+          <div class="card infoCard">
+            <h4>Как изучают космос?</h4>
+            <p class="muted">
+              С помощью телескопов, спутников и космических аппаратов. Учёные анализируют свет и сигналы, чтобы понимать состав и движение объектов.
+            </p>
+          </div>
+          <div class="card infoCard">
+            <h4>Почему это интересно?</h4>
+            <p class="muted">
+              Космос помогает понять происхождение планет, звёзд и, возможно, жизни в других местах Вселенной.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANETS -->
+    <section class="section" id="planets">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h3>Планеты</h3>
+            <p class="muted small">Нажми “Подробнее”, чтобы открыть модальное окно. Нажми “⭐”, чтобы поставить лайк.</p>
+          </div>
+          <input id="searchInput" class="input" type="text" placeholder="Поиск по планетам (например: Марс)" />
+        </div>
+
+        <div id="cards" class="cards"></div>
+      </div>
+    </section>
+
+    <!-- FACTS (Accordion) -->
+    <section class="section" id="facts">
+      <div class="container">
+        <h3>Факты (аккордеон)</h3>
+
+        <div class="accordion">
+          <button class="accBtn" type="button">Почему в космосе нет звука?</button>
+          <div class="accPanel">
+            <p>Звук — это колебания в среде. В космосе почти вакуум, поэтому звук там не распространяется.</p>
+          </div>
+
+          <button class="accBtn" type="button">Что такое световой год?</button>
+          <div class="accPanel">
+            <p>Это расстояние, которое свет проходит за 1 год. Удобно для огромных космических расстояний.</p>
+          </div>
+
+          <button class="accBtn" type="button">Почему Марс красный?</button>
+          <div class="accPanel">
+            <p>Из-за пыли с оксидами железа на поверхности — выглядит как “ржавчина”.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="muted">HTML + CSS + JS · простой проект</span>
+      <a href="#top" class="toTop">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close="true"></div>
+    <div class="modal__content" role="dialog" aria-modal="true">
+      <div class="modal__head">
+        <h4 id="modalTitle">Заголовок</h4>
+        <button id="modalClose" class="btn btn--ghost" type="button">✕</button>
+      </div>
+
+      <div class="modal__body">
+        <img id="modalImg" class="modal__img" alt="" />
+        <p id="modalText" class="muted"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
